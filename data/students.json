@@ -1,0 +1,46 @@
+[
+  {
+    "student_id": 101,
+    "name": "Aditya Sharma",
+    "age": 20,
+    "grade": "A",
+    "course": "Computer Science",
+    "email": "aditya.sharma@example.com"
+  },
+
+  {
+    "student_id": 102,
+    "name": "Rohit Verma",
+    "age": 21,
+    "grade": "B",
+    "course": "Information Technology",
+    "email": "rohit.verma@example.com"
+  },
+
+  {
+    "student_id": 103,
+    "name": "Priya Singh",
+    "age": 19,
+    "grade": "A",
+    "course": "Data Science",
+    "email": "priya.singh@example.com"
+  },
+
+  {
+    "student_id": 104,
+    "name": "Neha Patel",
+    "age": 22,
+    "grade": "C",
+    "course": "Electronics",
+    "email": "neha.patel@example.com"
+  },
+  
+  {
+    "student_id": 105,
+    "name": "Aman Gupta",
+    "age": 20,
+    "grade": "B",
+    "course": "Mechanical Engineering",
+    "email": "aman.gupta@example.com"
+  }
+]
