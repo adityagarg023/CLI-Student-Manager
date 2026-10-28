@@ -4,12 +4,13 @@ from src.student import Student
 DATA_FILE = "data/students.json"
 CSV_FILE = "data/students.csv"
 
+
 class Manager:
     def __init__(self):
         if not os.path.exists(DATA_FILE):
             with open(DATA_FILE, "w") as f:
-                json.dump([],f)
-        
+                json.dump([], f)
+
     def load_students(self):
         with open(DATA_FILE, "r") as f:
             return json.load(f)
@@ -19,10 +20,7 @@ class Manager:
             json.dump(students, f, indent="4")
 
     def student_exists(self, student_id):
-        return any(
-            s["student_id"] == student_id
-            for s in self.load_students()
-        )
+        return any(s["student_id"] == student_id for s in self.load_students())
 
     def add_student(self, student: Student):
         students = self.load_students()
@@ -68,8 +66,7 @@ class Manager:
         students = self.load_students()
         with open(CSV_FILE, "w", newline="") as f:
             writer = csv.DictWriter(
-                f,
-                fieldnames=["student_id", "name", "age", "grade", "course", "email"]
+                f, fieldnames=["student_id", "name", "age", "grade", "course", "email"]
             )
             writer.writeheader()
             writer.writerows(students)

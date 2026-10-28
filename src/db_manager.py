@@ -22,11 +22,10 @@ class SQLiteStudentManager:
         """)
         self.conn.commit()
 
-
     def add_student(self, student):
         self.conn.execute(
             "INSERT INTO students VALUES (?, ?, ?, ?)",
-            (student.student_id, student.name, student.age, student.course)
+            (student.student_id, student.name, student.age, student.course),
         )
         self.conn.commit()
 

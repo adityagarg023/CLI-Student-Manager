@@ -14,5 +14,5 @@ class Student:
             "age": self.age,
             "grade": self.grade,
             "course": self.course,
-            "email": self.email
+            "email": self.email,
         }

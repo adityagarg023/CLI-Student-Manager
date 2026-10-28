@@ -19,6 +19,7 @@ def print_students(students):
             f"Course: {s['course']}"
         )
 
+
 def interactive_menu():
     while True:
         print("\n1. Add Student")
@@ -56,7 +57,11 @@ def interactive_menu():
                 name = input("New name: ")
                 age = input_int("New age: ")
                 course = input("New course: ")
-                print("Updated" if manager.update_student(sid, name, age, grade, course, email) else "Not found")
+                print(
+                    "Updated"
+                    if manager.update_student(sid, name, age, grade, course, email)
+                    else "Not found"
+                )
 
             elif choice == "5":
                 sid = input("ID: ")
